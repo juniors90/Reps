@@ -17,7 +17,7 @@
 #***************************************************************************
 
 #! Commands that return lists of vectors:
-#! FixedPoints(rep). . returns a list of vectors which form a basis for the fixed points of rep.
+#! FixedPoints(rep). .
 
 #! FixedQuotient(rep). . returns a list of vectors which form a basis for the augmentation ideal times rep.
 
