@@ -118,7 +118,7 @@ DeclareGlobalFunction( "KernelIntersection" );
 #! are probably indecomposable.
 DeclareGlobalFunction( "Decompose" );
 
-#! #! @Arguments rep
+#! @Arguments rep
 #!
 #! @Returns a list of bases of direct summands of rep which
 #! are probably indecomposable.
@@ -134,7 +134,7 @@ DeclareGlobalFunction( "Decompose" );
 #! in rep.summands.
 DeclareGlobalFunction( "DecomposeGroupRep" );
 
-##! @Arguments repn, basis
+#! @Arguments repn, basis
 #!
 #! @Returns (probably) a list 
 #! of two bases for summands of the submodule of repn 
@@ -143,7 +143,7 @@ DeclareGlobalFunction( "DecomposeGroupRep" );
 #! only element is the given basis.
 DeclareGlobalFunction( "DecomposeSubmodule" );
 
-##! @Arguments repn, basis
+#! @Arguments repn, basis
 #!
 #! @Returns (probably) a list 
 #! of two bases for summands of the submodule of repn 
