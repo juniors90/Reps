@@ -44,7 +44,7 @@ DeclareGlobalFunction( "SubFixedQuotient" );
 #!   the sum of images of trace maps from fixed points
 #!   of proper subgroups of the `p`-subgroup.
 #!
-#! @Description BrauerTraceImage(representation, p-subgroup of rep.group) returns a list
+#! @Description This function returns a list
 #! of vectors that is a basis for the sum of the images of traces from proper
 #! subgroups of the p-group.  Written by Peter Webb June 2016.
 DeclareGlobalFunction( "BrauerTraceImage" );

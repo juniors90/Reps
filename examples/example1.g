@@ -1,3 +1,4 @@
+# LogTo("test.log");Read("C:/gap-4.11.1/pkg/Reps-1.0.0/tst/testall.g");
 gap> # We load Reps either by having it available as a 
 gap> # package or by creating a file in the home directory 
 gap> # called reps containing the routines.

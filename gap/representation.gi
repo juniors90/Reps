@@ -69,23 +69,24 @@ end );
 ##
 #########################################################
 
-InstallGlobalFunction( PermutationRepOnCosets, function(G,H,F)
+InstallGlobalFunction( PermutationRepOnCosets, function(G, H, F)
     local n , L, M, phi, g, i, j, R, k;
-    L:=[]; R:=[];
-    L:=RightCosets(G,H);
-    n:=Length(L);
-    for k in [1..Length(GeneratorsOfGroup(G))] do
-        g:=GeneratorsOfGroup(G)[k];
-        M:=NullMat(n,n,F);
+    L := [];
+    R := [];
+    L := RightCosets( G, H );
+    n := Length( L );
+    for k in [1..Length( GeneratorsOfGroup( G ) )] do
+        g := GeneratorsOfGroup(G)[k];
+        M := NullMat(n, n, F);
         for i in [1..n] do
-            j:=0;
-            repeat j:=j+1;
-            until L[i]*g=L[j];
-            M[i][j]:=Z(Size(F))^0;
+            j := 0;
+            repeat j := j + 1;
+            until L[i] * g = L[j];
+            M[i][j] := Z( Size( F ) )^0;
         od;
-        R[k]:=M;
+        R[k] := M;
     od;
-    phi:=Rep(G,R,F);
+    phi := Rep(G, R, F);
     return phi;
 end );
 
