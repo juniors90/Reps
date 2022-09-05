@@ -23,7 +23,7 @@
 #! meataxe modules. Clearly more of the meataxe commands could be implemented
 #! than is done below.
 #!
-#! @Section Commands that return a representation
+#! @Section Methods
 #!
 #! @Arguments args
 #!

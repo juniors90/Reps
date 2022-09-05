@@ -18,11 +18,13 @@
 
 #! @Chapter Commands that return lists of vectors
 #!
+#! @Section Methods
+#!
 #! @Arguments rep
 #!
 #! @Returns a list of vectors which form a basis for the fixed points of `rep`.
 #!
-#! @Description FixedQuotient(rep) returns a basis for augmentation ideal . module.
+#! @Description a basis for augmentation ideal . module.
 #! Handles trivial groups and zero-dimensional reps.
 DeclareGlobalFunction( "FixedQuotient" );
 
