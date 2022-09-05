@@ -15,7 +15,8 @@
 #  Dan Christensen, Roland Loetscher, Robert Hank, Bryan Simpkins,
 #  Brad Froehle and others.
 #***************************************************************************
-#! @Chapter Homomorphisms
+#!
+#! @Chapter Commands for homomorphisms
 #!
 #! @Section Methods
 #!
@@ -68,7 +69,6 @@ DeclareGlobalFunction( "IsHom" );
 DeclareGlobalFunction( "ProjectiveHomBasis" );
 DeclareGlobalFunction( "OldProjectiveHomBasis" );
 
-
 #! @Arguments mat1, mat2
 #!
 #! @Returns the matrix of the tensor product of two morphisms.
@@ -90,7 +90,6 @@ DeclareGlobalFunction( "OldTensorProductMorphism" );
 #! natural homomorphism from rep to `RestrictedRep(G, H,
 #! InducedRep( G, H, rep ) )`.
 DeclareGlobalFunction( "InducedInclusion" );
-
 
 #! @Arguments G, H, rep
 #!

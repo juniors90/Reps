@@ -16,7 +16,7 @@
 #  Brad Froehle and others.
 #***************************************************************************
 
-#! @Chapter Tests
+#! @Chapter Test
 #!
 #! In the following routines several of the meataxe commands available in GAP
 #! are converted so that they take representations as arguments and return

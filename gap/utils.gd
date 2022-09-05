@@ -1,4 +1,8 @@
 
+#! @Chapter Miscelanius
+#! 
+#! @Section Methods
+
 #! MakeIsoToPermGroup(rep) creates fields rep.permgroup and rep.isotopermgroup
 #! which are used by routines which are written to work only with permutation
 #! groups, typically involving an algorithm which goes down a stabilizer
