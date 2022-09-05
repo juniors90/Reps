@@ -66,7 +66,7 @@ DeclareGlobalFunction( "IsProjectiveRep" );
 #!
 #! @Description
 #!   `IsIsomorphicSummand` returns `true` if `rep1` is isomorphic to a
-#! direct summand of `rep`2`, `false` otherwise. It only works
+#! direct summand of `rep2`, `false` otherwise. It only works
 #! when `rep1` is indecomposable of dimension prime to the field
 #! characteristic. It relies on a result of Benson and Carlson.
 DeclareGlobalFunction( "IsIsomorphicSummand" );
