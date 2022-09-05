@@ -40,14 +40,17 @@ end );
 ## SubFixedQuotient(rep, list of vecs)
 ## returns a basis for augmentation ideal . submodule spanned by the vecs.
 ## The span of the vecs must be a submodule, and this is not checked.
-## Handles trivial groups, zero-dimensional reps and empty u.
+## Handles trivial groups, zero-dimensional reps and empty `vecs`.
 ##
 ##############################################################################
 
-InstallGlobalFunction( SubFixedQuotient, function(rep,u)
-    local onemat, v;
-    onemat:=SafeIdentityMat(rep.dimension, rep.field);
-    v:=Concatenation(List(rep.genimages, g->SafeMatrixMult(u, g - onemat, rep.dimension)));
+InstallGlobalFunction( SubFixedQuotient, function(rep, vecs)
+    local onemat, v, genimages, dim, l;
+    dim:=rep.dimension;
+    onemat:=SafeIdentityMat(dim, rep.field);
+    genimages := rep.genimages;
+    l:=List(genimages, g -> SafeMatrixMult( vecs, g - onemat, dim ) );
+    v:=Concatenation(l);
     return SafeBaseMat(v);
 end );
 
@@ -239,8 +242,8 @@ end );
 ##
 ##############################################################################
 
-InstallGlobalFunction( DecomposeSubmodule, function(M,basisstructure)
-    return M.operations.DecomposeSubmodule(M,basisstructure);
+InstallGlobalFunction( DecomposeSubmodule, function(M, basis)
+    return M.operations.DecomposeSubmodule(M, basis);
 end );
 
 InstallGlobalFunction( GroupDecomposeSubmodule, function(repn, basis)
@@ -484,7 +487,7 @@ end );
 ##
 ##############################################################################
 
-InstallGlobalFunction( MatricesOfElements, function(rep,l)
+InstallGlobalFunction( MatricesOfElements, function(rep, l)
     local newrep, newl, matlist, s, temp, x, n;
     MakeIsoToPermGroup(rep);
     newrep:=rec(
